@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  
+header {
+  display: flex;
+  height: 12vh;
+  justify-content: center;
+  background-color: #252525;
+}
+
+header section {
+  display: flex;
+  width: 88vw;
+  border: red 2px solid;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header div {
+  display: flex;
+  width: 12vw;
+  justify-content: space-between;
+  align-items: center;
+  border: white 2px solid;
+  color: white;
+}
+  
+.logomarca-small {
+  width: 40px;
+  height: 40px;
+}
+
+nav {
+  display: flex;
+  width: 12vw;
+  border: white 2px solid;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.insta {
+  width: 32px;
+  height: 32px;
+}
+
+.youtube {
+  width: 40px;
+  height: 30px;
+}
+
+.whats {
+  width: 32px;
+  height: 32px;
+}
+
+main h1 {
+  font-size: 51px;
+}
+
+main h2 {
+  font-size: 49px;
+  font-family: 'Roboto Serif', sans-serif;
+  font-weight: 700;
+}
+
+main p {
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  bottom: 2vh;
+}
+
+.box1 {
+  display: flex;
+  background-image: url('./assets/festa.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 120vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.box1 div {
+  display: flex;
+  flex-direction: column;
+  border: 2px red solid;
+  width: 40vw;
+  height: 48vh;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  color: white;
+  font-family: 'Roboto Serif', sans-serif;
+  font-weight: 700;
+  position: relative;
+  bottom: 22vh;
+  right: 0.8vw;
+}
+
+.logomarca-big {
+  width: 12vw;
+}
+
+.box2 {
+  display: flex;
+  background-image: url('./assets/touca.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.box2 div{
+  display: flex;
+  flex-direction: column;
+  border: 2px red solid;
+  width: 34vw;
+  height: 54vh;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  color: #3A342F;
+  position: relative;
+  left: 8vw;
+}
+
+.box2 input {
+  background-color: #3A342F;
+  color: white;
+  width: 16vw;
+  height: 10vh;
+  border-radius: 44px;
+  font-size: 25px;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+.box3 {
+  display: flex;
+  background-image: url('./assets/pequeno.png');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.box3 div {
+  display: flex;
+  flex-direction: column;
+  border: 2px red solid;
+  width: 28vw;
+  height: 66vh;
+  justify-content: space-evenly;
+  color: white;
+  position: relative;
+  right: 18vw;
+}
+
+.box3 input {
+  background-color: white;
+  color: #3A342F;
+  width: 16vw;
+  height: 10vh;
+  border-radius: 44px;
+  font-size: 25px;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+.havaianas {
+  width: 170px;
+  height: 23px;
+}
+
+.americanas {
+  width: 147px;
+  height: 19px;
+}
+
+.box4 {
+  display: flex;
+  height: 18vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.box4 div {
+  display: flex;
+  width: 48vw;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px red solid;
+  color: #FD6A9A;
+}
+
+main h3 {
+  font-size: 24px;
+  font-family: 'Roboto Serif', sans-serif;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50vh;
+  background-color: #EB4A7B;
+}
+
+footer section {
+  display: flex;
+  width: 54vw;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px red solid;
+  position: relative;
+  left: 8vw;
+}
+
+footer div {
+  display: flex;
+  height: 36vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: black 2px solid;
+}
+
+footer h3 {
+  color: white;
+  font-size: 24px;
+  font-family: 'Roboto Serif', sans-serif;
+  font-weight: 700;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+  height: 16vh;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
