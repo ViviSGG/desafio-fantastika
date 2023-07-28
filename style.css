@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.no-desktop {
+  display: none;
+}
   
 header {
   display: flex;
@@ -21,7 +25,7 @@ header section {
 
 header div {
   display: flex;
-  width: 12vw;
+  width: 166px;
   justify-content: space-between;
   align-items: center;
   border: white 2px solid;
@@ -35,7 +39,7 @@ header div {
 
 header nav {
   display: flex;
-  width: 12vw;
+  width: 166px;
   border: white 2px solid;
   justify-content: space-between;
   align-items: center;
@@ -56,30 +60,10 @@ header nav {
   height: 32px;
 }
 
-main h1 {
-  font-size: 51px;
-}
-
-main h2 {
-  font-size: 49px;
-  font-family: 'Roboto Serif', sans-serif;
-  font-weight: 700;
-}
-
-main p {
-  font-size: 25px;
-  font-family: 'Roboto', sans-serif;
-  padding: 18px 0 32px 0;
-}
-
 .box1 {
   display: flex;
   background-image: url('./assets/festa.png');
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-/*   background-size: 100% 100%;  */
-/*   height: 120vh;  */
+  background-size: 100% 100%;
   height: 100vh;
   width: 100%;
   justify-content: center;
@@ -90,21 +74,23 @@ main p {
   display: flex;
   flex-direction: column;
   border: 2px red solid;
-  width: 40vw;
-  height: 48vh;
+  width: 88vw;
   align-items: center;
-  justify-content: space-between;
-  text-align: center;
-  color: white;
+  position: relative;
+  bottom: 20vh;
+  right: 0.8vw;
+}
+
+.box1 h2 {
+  font-size: 51px;
   font-family: 'Roboto Serif', sans-serif;
   font-weight: 700;
-  position: relative;
-  bottom: 22vh;
-  right: 0.8vw;
+  color: white;
 }
 
 .logomarca-big {
   width: 12vw;
+  margin-top: 4vh;
 }
 
 main input {
@@ -115,33 +101,47 @@ main input {
   border: none;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
- }
+}
 
-.box2 {
+main h3 {
+  font-size: 49px;
+  font-family: 'Roboto Serif', sans-serif;
+  font-weight: 700;
+}
+
+main p {
+  font-size: 27px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 40px;
+}
+
+.container-box2 {
   display: flex;
   background-image: url('./assets/touca.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   height: 100vh;
   width: 100%;
   justify-content: center;
   align-items: center;
 }
 
+.box2 {
+  display: flex;
+  justify-content: flex-start;
+  width: 80vw;
+  border: 2px solid;
+}
+
 .box2 div{
   display: flex;
   flex-direction: column;
   border: 2px red solid;
-  width: 32vw;
   color: #3A342F;
 }
 
-.box2 .ajuste {
-  display: flex;
-  justify-content: flex-start;
-  width: 88vw;
-  border: 2px solid;
+.box2 p {
+  width: 35vw;
+  border: purple 2px solid;
 }
 
 .box2 input {
@@ -149,36 +149,60 @@ main input {
   color: white;
 }
 
-.box3 {
+.container-box3 {
   display: flex;
   background-image: url('./assets/pequeno.png');
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   height: 100vh;
   width: 100%;
   justify-content: center;
   align-items: center;
 }
 
+.box3 {
+  display: flex;
+  justify-content: flex-end;
+  width: 74vw;
+  border: 2px solid;
+}
+
 .box3 div {
   display: flex;
   flex-direction: column;
   border: 2px red solid;
-  width: 32vw;
   color: white;
 }
 
-.box3 .ajuste {
-  display: flex;
-  justify-content: flex-end;
-  width: 88vw;
-  border: 2px solid;
+.box3 p {
+  width: 32vw;
+  border: purple 2px solid;
 }
 
 .box3 input {
   background-color: white;
   color: #3A342F;
+}
+
+.container-box4 {
+  display: flex;
+  height: 18vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.box4 {
+  display: flex;
+  width: 48vw;
+  justify-content: space-between;
+  border: 2px red solid;
+}
+
+.box4 div {
+  display: flex;
+  width: 32vw;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid;
 }
 
 .havaianas {
@@ -189,45 +213,35 @@ main input {
   width: 147px;
 }
 
-.box4 {
-  display: flex;
-  height: 18vh;
-  align-items: center;
-  justify-content: center;
-}
-
-.box4 .ajuste {
-  display: flex;
-  width: 48vw;
-  justify-content: space-between;
-  align-items: center;
-  border: 2px red solid;
-  color: #FD6A9A;
-}
-
-main h3 {
+.box4 h4 {
   font-size: 24px;
   font-family: 'Roboto Serif', sans-serif;
   font-style: italic;
   font-weight: lighter;
+  color: #FD6A9A;
 }
 
 footer {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   height: 50vh;
   background-color: #EB4A7B;
 }
 
-footer section {
+.container-box5 {
   display: flex;
-  width: 54vw;
+  justify-content: flex-start;
+  width: 86vw;
+  border: 2px solid white;
+}
+
+.box5 {
+  display: flex;
+  width: 50vw;
   justify-content: space-between;
   align-items: center;
   border: 2px red solid;
-  position: relative;
-  left: 8vw;
 }
 
 footer div {
@@ -238,7 +252,7 @@ footer div {
   border: black 2px solid;
 }
 
-footer h3 {
+footer h4 {
   color: white;
   font-size: 24px;
   font-family: 'Roboto Serif', sans-serif;
@@ -260,10 +274,14 @@ footer a {
   color: white;
 }
 
-@media (max-width:500px) {
+@media (max-width:600px) {
 
-  header {
-    background-color: green;
+  .no-desktop {
+    display: flex;
+  }
+
+  .no-mobile {
+    display: none;
   }
 
   .logomarca-small {
@@ -272,28 +290,25 @@ footer a {
   }
 
   header div {
-    width: 46vw;
-    justify-content: space-between;
-  }
-
-  .desktop {
-    display: none;
+    width: 170px;
   }
 
   header nav {
+    width: 60px;
     justify-content: flex-end;
   }
 
-  main h1 {
+  .box1 h2 {
     font-size: 32px;
   }
   
-  main h2 {
+  main h3 {
     font-size: 28px;
   }
   
   main p {
     font-size: 16px;
+    line-height: 22px;
   }
 
   main input {
@@ -304,7 +319,7 @@ footer a {
   }
 
   .box1 {
-    background-image: url("./assets/festa.png");
+    background-image: url("./assets/festa-mobile.png");
   }
 
   .box1 div { 
@@ -317,42 +332,51 @@ footer a {
   }
 
 
-  .box2 {
+  .container-box2 {
     background-image: url("./assets/touca-mobile.png");
     background-position: bottom;
   }
 
-  .box2 div { 
+  .container-box2 div { 
     width: 88vw;
   }
 
-  .box2 .ajuste {
+  .box2 {
     width: 88vw;
     height: 80%;
   }
 
-  .box3 {
+  .box2 p {
+    width: 64vw;
+  }
+
+  .container-box3 {
     background-image: url("./assets/pequeno-mobile.png");
     background-position: bottom;
   }
 
-  .box3 div { 
+  .container-box3 div { 
     width: 88vw;
   }
 
-  .box3 .ajuste {
+  .box3 {
     width: 88vw;
     height: 80%;
   }
 
-  .box4 .ajuste { 
+  .box3 p {
+    width: 70vw;
+  }
+
+  .box4 { 
     width: 88vw;
     flex-direction: column;
+    align-items: center;
     border: 2px solid black;
     height: 8vh;
   }
 
-  .box4 h3 {
+  .container-box4 h4 {
     font-size: 14px;
   }
 
@@ -364,11 +388,46 @@ footer a {
     width: 100px;
   }
 
-  .box4 div {
+  .container-box4 div {
     display: flex;
-    border: 2px solid;
+    border: 2px solid red;
     width: 80vw;
     justify-content: space-evenly;
     align-items: center;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #EB4A7B;
+  }
+
+  .container-box5 {
+    justify-content: center;
+    align-items: center;
+    width: 88vw;
+  }
+  
+  .box5 {
+    height: 50vw;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+  }
+
+  footer div {
+    align-items: center;
+  }
+
+  footer ul {
+    align-items: center;
+    height: 16vh;
+  }
+
+  footer h4 {
+    font-size: 16px;
   }
 }
